@@ -1,0 +1,8 @@
+version: '3'
+services:
+  windows:
+    build:
+      context: .
+      dockerfile: ./docker/windows/Dockerfile
+    volumes:
+      - ./dist/:C:/das2py/host_dist/
